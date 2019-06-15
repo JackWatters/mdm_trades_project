@@ -1,3 +1,9 @@
+
+from django.conf.urls import url
+from django.contrib import admin
+from django.conf.urls import include
+from trades import views
+
 """mdm_trades_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -17,5 +23,7 @@ from django.conf.urls import url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^$', views.home, name='home'),
+    url(r'^trades/', include('trades.urls')),
     url(r'^admin/', admin.site.urls),
 ]
