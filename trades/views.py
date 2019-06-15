@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("This is the home page. <br/> <a href='/trades/about/'>About</a>.")
+    return render(request, 'trades/home.html')
 
 
 def about(request):
