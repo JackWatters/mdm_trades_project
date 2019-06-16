@@ -1,16 +1,7 @@
-<!DOCTYPE html>
+{% extends 'trades/base.html' %}
 {% load staticfiles %}
-<html>
-	<head>
-		<title>MDM specialist trades</title>
-	</head>
-	<body> 		<h1>Home</h1>
-		<div>
-			this is the home page <br />
-		</div>
-		<div> 
-			<a href='/trades/about/'>About</a><br />
-            <img src="{% static "images/cala-homes.jpg" %}" alt="Cala homes" />
-		</div>
-	</body>
-</html>
+
+{% block title_block %} Home {% endblock %}
+
+{% block body_block %} This is the home page {% endblock %}
+

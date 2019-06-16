@@ -6,15 +6,18 @@ def home(request):
 
 
 def about(request):
-    return HttpResponse("This is the about page. <br/> <a href='/trades/'>Home</a>.")
-
-
-def contact_us(request):
-    return HttpResponse("This is the contact us page.")
+    return render(request, 'trades/about.html')
 
 
 def our_clients(request):
-    return HttpResponse("This is the our clients page.")
+    return render(request, 'trades/our_clients.html')
+
+
+def contact_us(request):
+    return render(request, 'trades/contact_us.html')
+
+
+
 
 
 
