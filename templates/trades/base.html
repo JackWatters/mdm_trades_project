@@ -2,14 +2,18 @@
 {% load staticfiles %}
 <html>
     <head lang="en">
+        <link rel="stylesheet" type="text/css" href="{% static 'trades/style.css' %}">
         <meta charset="UTF-8" />
         <title> {% block title_block %}  {% endblock %} </title>
     </head>
     <body>
-        <a href='/trades/'>Home</a><br />
-        <a href='/trades/about/'>About</a><br />
-        <a href='/trades/contact_us/'>Contact us</a><br />
-        <a href='/trades/our_clients/'>Our clients </a><br />
+        <div id = "links">
+            <a href='/trades/'>Home</a><br />
+            <a href='/trades/about/'>About</a><br />
+            <a href='/trades/contact_us/'>Contact us</a><br />
+            <a href='/trades/our_clients/'>Our clients </a><br />
+        </div>
+
 
         {% block body_block %}  {% endblock %}
     </body>
