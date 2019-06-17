@@ -7,12 +7,16 @@
         <title> {% block title_block %}  {% endblock %} </title>
     </head>
     <body>
-        <div id = "links">
-            <a href='/trades/'>Home</a><br />
-            <a href='/trades/about/'>About</a><br />
-            <a href='/trades/contact_us/'>Contact us</a><br />
-            <a href='/trades/our_clients/'>Our clients </a><br />
-        </div>
+
+        <ul>
+            <li> <a href='/trades/'>Home</a> </li>
+            <li> <a href='/trades/about/'>About</a> </li>
+            <li> <a href='/trades/contact_us/'>Contact us</a> </li>
+            <li> <a href='/trades/our_clients/'>Our clients </a> </li>
+        </ul>
+
+
+        <br/>
 
 
         {% block body_block %}  {% endblock %}
