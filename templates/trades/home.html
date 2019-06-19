@@ -1,7 +1,45 @@
 {% extends 'trades/base.html' %}
 {% load staticfiles %}
+<script src = " { % static 'trades/slides.js' % }"> </script>
 
 {% block title_block %} Home {% endblock %}
 
-{% block body_block %} This is the home page {% endblock %}
+{% block body_block %}
+
+<div class = "Slideshow">
+
+
+    <div class="slide">
+        <img src="{% static 'images/cala.jpg' %}" alt="cala homes">
+        <div class = "caption"> Cala homes </div>
+    </div>
+
+
+    <div class="slide">
+        <img src="{% static 'images/avant.jpg' %}" alt="avant homes">
+        <div class = "caption"> avant homes </div>
+    </div>
+
+
+    <div class="slide">
+        <img src="{% static 'images/persimmons.jpg' %}" alt="persimmons homes">
+        <div class = "caption"> persimmons homes </div>
+    </div>
+
+
+    <div class="slide">
+        <img src="{% static 'images/taylor-wimpey.jpg' %}" alt="taylor wimpey homes">
+        <div class = "caption"> taylor wimpey homes </div>
+    </div>
+
+
+    <a class = "previous" onclick='moveSlides(-1)'> &#10094;</a>
+    <a class = "next" onclick='moveSlides(1)'> &#10095;</a>
+
+</div>
+
+
+
+
+{% endblock %}
 

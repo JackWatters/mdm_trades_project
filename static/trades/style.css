@@ -15,18 +15,21 @@ header::after {
     clear: both;
 }
 
+nav {
+    position: absolute;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+    
+
     
 .logo {
     padding: 10px 0;
     float: left;
     height: 100px;
-    width: 100px;
-    
-}
-
-
-nav {
-    float: right;
+    width: 100px;    
 }
 
 
@@ -41,6 +44,7 @@ nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 50px;
+    position: relative;
     font-size: 20px;
 }
 
@@ -52,11 +56,24 @@ nav a {
 }
 
 
-nav a:hover {
-    
+nav a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
 }
-    
 
+nav a:hover {
+    color: #003366;
+}
+
+
+nav a:hover::after {
+    background-color: green;
+    width: 100%;
+}
 
 
 body {
