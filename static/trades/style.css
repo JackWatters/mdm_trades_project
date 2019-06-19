@@ -1,9 +1,65 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-li {
-  display: inline;
+
+header {
+    background-color: white;
+}
+
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+    
+.logo {
+    padding: 10px 0;
+    float: left;
+    height: 100px;
+    width: 100px;
+    
+}
+
+
+nav {
+    float: right;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+nav a:hover {
+    
+}
+    
+
+
+
+body {
+    margin: 0;
+    background-color: #cece91;
 }
