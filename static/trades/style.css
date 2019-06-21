@@ -1,5 +1,5 @@
 .container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
@@ -17,7 +17,7 @@ header::after {
 
 nav {
     position: absolute;
-    left: 0px;
+    left:0px;
     height: 40px;
     width: 100%;
     text-align: center;
@@ -26,8 +26,8 @@ nav {
 
     
 .logo {
-    padding: 10px 0;
     float: left;
+    left: 30px;
     height: 100px;
     width: 100px;    
 }
@@ -77,6 +77,72 @@ nav a:hover::after {
 
 
 body {
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
     background-color: #cece91;
 }
+
+.slideShow {
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    height: 300px;
+    border: solid 1px black;
+     
+}
+
+.caption {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.active,.dot:hover {
+    background-color: #717171;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -2,6 +2,8 @@
 {% load staticfiles %}
 <html>
     <head lang="en">
+        {% block script_block %} {% endblock %}
+
         <link rel="stylesheet" type="text/css" href="{% static 'trades/style.css' %}">
         <meta charset="UTF-8" />
         <title> {% block title_block %}  {% endblock %} </title>
@@ -9,18 +11,19 @@
     <body>
         <header>
             <div class = "container">
-                <img src="{% static 'images/cala-homes.jpg' %}" alt="logo" class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="logo" class="logo">
                 <nav>
                     <ul>
                         <li> <a href='/trades/'>Home</a> </li>
                         <li> <a href='/trades/about/'>About</a> </li>
-                        <li> <a href='/trades/contact_us/'>Contact us</a> </li>
                         <li> <a href='/trades/our_clients/'>Our clients </a> </li>
+                        <li> <a href='/trades/contact_us/'>Contact us</a> </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
+        <br/>
         <br/>
 
 
