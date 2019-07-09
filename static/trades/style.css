@@ -1,5 +1,5 @@
 .container {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -17,7 +17,6 @@ header::after {
 
 nav {
     position: absolute;
-    left:0px;
     height: 40px;
     width: 100%;
     text-align: center;
@@ -26,10 +25,11 @@ nav {
 
     
 .logo {
+    position: relative;
     float: left;
-    left: 30px;
+    left: 70px;
     height: 100px;
-    width: 100px;    
+    width: 300px;
 }
 
 
@@ -168,6 +168,15 @@ h1 {
     font-size: 20px;
     left: 200px;
     width: 400px;
+}
+
+.picture {
+    position: absolute;
+    float: right;
+    right: 200px;
+    width: 400px;
+    height: 1000px;
+    overflow:hidden;
 }
 
 

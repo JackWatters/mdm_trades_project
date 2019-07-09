@@ -3,4 +3,19 @@
 
 {% block title_block %} Our clients {% endblock %}
 
-{% block body_block %} This is the our clients page {% endblock %}
+{% block body_block %}
+
+<div>
+    {% if categories %}
+        <ul>
+            {% for category in categories %}
+                <li>
+                    <a href="/trades/category/{{ category.slug }}">{{ category.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <strong>There are no categories present.</strong> {% endif %}
+</div>
+
+{% endblock %}
