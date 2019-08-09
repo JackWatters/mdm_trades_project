@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.core.paginator import Paginator
 from django.http import HttpResponse
 from trades.models import Category, Page
 
@@ -12,8 +13,8 @@ def about(request):
 
 
 def our_clients(request):
-    category_list = Category.objects.all()
-    context_dict = {'categories': category_list}
+    category = Category.objects.filter(name="Clients")
+    context_dict = {'category': category}
     return render(request, 'trades/our_clients.html', context_dict)
 
 
@@ -26,12 +27,13 @@ def show_category(request, category_name_slug):
     try:
         category = Category.objects.get(slug=category_name_slug)
         pages = Page.objects.filter(category=category)
+
         context_dict['pages'] = pages
         context_dict['category'] = category
     except Category.DoesNotExist:
         context_dict['category'] = None
         context_dict['pages'] = None
-    return render(request, 'trades/category.html', context_dict)
+    return render(request, 'trades/our_clients.html', context_dict)
 
 
 def show_page(request, page_name_slug):

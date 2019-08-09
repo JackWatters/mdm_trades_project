@@ -8,11 +8,11 @@ from trades.models import Category, Page
 def populate():
 
     client_pages = [
-        {"title": "cala homes",
+        {"title": "Cala homes",
          "url": "https://www.cala.co.uk",
          "description": ""},
-        {"title": "Persimmon homes",
-         "url": "https://www.persimmonhomes.com",
+        {"title": "Keepmoat homes",
+         "url": "https://www.keepmoat.com",
          "description": ""},
         {"title": "Avant homes",
          "url": "https://www.avanthomes.co.uk",

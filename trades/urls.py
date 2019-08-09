@@ -1,5 +1,6 @@
 from django.conf.urls import url
 from trades import views
+from django.views.generic.base import RedirectView
 
 
 urlpatterns = [
@@ -11,4 +12,5 @@ urlpatterns = [
         views.show_category, name='show_category'),
     url(r'^page/(?P<page_name_slug>[\w\-]+)/$',
         views.show_page, name='show_page'),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/images/favicon.ico')),
 ]

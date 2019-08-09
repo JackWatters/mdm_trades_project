@@ -1,14 +1,19 @@
 {% extends 'trades/base.html' %}
 {% load staticfiles %}
 
-{% block title_block %} page.title {% endblock %}
+{% block title_block %} {{ page.title }} {% endblock %}
 
 {% block body_block %}
 
-<div>
-    <h1>{{ page.title }}</h1>
-    {{ page.url }}
+<h1>{{ page.title }}</h1>
+<div class = "info">
+    {{ page.title }} website: <a href="{{ page.url }}"> click here </a> </br>
     {{ page.description }}
+</div>
+
+
+<div class = "picture">
+    <img src="{{ MEDIA_URL }}{{ page.picture }}" />
 </div>
 
 {% endblock %}

@@ -23,6 +23,7 @@ class Page(models.Model):
     title = models.CharField(max_length=128)
     description = models.TextField(max_length=280, blank=True)
     url = models.URLField()
+    picture = models.ImageField()
     slug = models.SlugField(unique=True)
 
     def save(self, *args, **kwargs):

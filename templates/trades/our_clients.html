@@ -6,16 +6,28 @@
 {% block body_block %}
 
 <div>
-    {% if categories %}
-        <ul>
-            {% for category in categories %}
-                <li>
-                    <a href="/trades/category/{{ category.slug }}">{{ category.name }}</a>
-                </li>
-            {% endfor %}
-        </ul>
+    {% if category %}
+        <h1>{{ category.name }}</h1>
+        {% if pages %}
+            <div class = "cards">
+                <ul>
+                    {% for page in pages %}
+                        <div class = "card">
+                            <img src="{{ MEDIA_URL }}{{ page.picture }}" />
+                            <div class = "card_info">
+                                <a href="/trades/page/{{ page.slug }}">{{ page.title }} </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% else %}
+            <strong>No pages currently in category.</strong>
+        {% endif %}
+
     {% else %}
-        <strong>There are no categories present.</strong> {% endif %}
+        The specified category does not exist!
+    {% endif %}
 </div>
 
 {% endblock %}

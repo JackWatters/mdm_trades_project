@@ -3,6 +3,8 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
 from trades import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 """mdm_trades_project URL Configuration
 
@@ -26,4 +28,4 @@ urlpatterns = [
     url(r'^$', views.home, name='home'),
     url(r'^trades/', include('trades.urls')),
     url(r'^admin/', include(admin.site.urls)),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
