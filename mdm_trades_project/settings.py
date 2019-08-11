@@ -31,7 +31,7 @@ SECRET_KEY = 'cx(#s$@7gadrbqddpxa%7s3fy^q)fr3-c=$(ox-g7bfyq($3h*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://JackWatters.pythonanywhere.com']
 
 
 # Application definition
