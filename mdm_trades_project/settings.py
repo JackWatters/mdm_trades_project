@@ -32,7 +32,7 @@ SECRET_KEY = 'cx(#s$@7gadrbqddpxa%7s3fy^q)fr3-c=$(ox-g7bfyq($3h*'
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['jackwatters.pythonanywhere.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
