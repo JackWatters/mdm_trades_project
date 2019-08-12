@@ -21,12 +21,12 @@ nav {
     width: 100%;
     text-align: center;
 }
-    
+
 .logo {
     position: relative;
     float: left;
     left: 70px;
-    height: 100px;
+    height: 30%;
     width: 250px;
 }
 
@@ -41,7 +41,7 @@ nav ul {
 nav li {
     display: inline-block;
     margin-left: 70px;
-    padding-top: 50px;
+    padding-top: 37px;
     position: relative;
     font-size: 20px;
 }
@@ -215,6 +215,21 @@ h1 {
 .card img {
     height: 150px;
     width: 150px;
+}
+
+/* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+
+
+img { max-width: 100%; }
+
 }
 
 
