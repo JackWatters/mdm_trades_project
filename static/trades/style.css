@@ -1,5 +1,6 @@
 .container {
     width: 80%;
+    height: 40%;
     margin: 0 auto;
 }
 
@@ -26,7 +27,7 @@ nav {
     position: relative;
     float: left;
     left: 70px;
-    height: device-height;
+    height: 10vh;
     max-width: 25%;
 }
 
