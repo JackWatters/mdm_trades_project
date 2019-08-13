@@ -27,7 +27,7 @@ nav {
 .logo {
     position: relative;
     float: left;
-    left: 70px;
+    left: 5vw;
     height: 10vh;
     max-width: 25%;
 }
@@ -42,10 +42,10 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 37px;
+    margin-left: 5vw;
+    padding-top: 4vh;
     position: relative;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 
