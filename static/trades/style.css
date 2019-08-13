@@ -5,6 +5,7 @@
 
 
 header {
+    width: 100%;
     background-color: white;
 }
 
@@ -26,7 +27,7 @@ nav {
     position: relative;
     float: left;
     left: 70px;
-    height: device-height;
+    height: 50px;
     max-width: 25%;
 }
 
