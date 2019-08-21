@@ -28,19 +28,25 @@
             </div>
         </header>
 
-        <br/>
-        <br/>
-        <br/>
+        </br>
+        </br>
+        </br>
+
+        <div class = "wrapper">
+            {% block body_block %}  {% endblock %}
+            <div class="push"></div>
+        </div>
 
 
-        {% block body_block %}  {% endblock %}
+        <footer class ="footer">
+            MDM specialist trades ltd </br>
+            36 Watt Road </br>
+            Hillington </br>
+            Glasgow
+        </footer>
 
 
     </body>
-    <footer>
-        MDM specialist trades ltd </br>
-        36 Watt Road </br>
-        Hillington </br>
-        Glasgow
-    </footer>
+
+
 </html>

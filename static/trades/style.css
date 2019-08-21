@@ -6,6 +6,8 @@
 }
 /* Landscape */
 @media screen and (orientation:landscape) {
+
+/* nav bar */
 .container {
     width: 80%;
     margin: 0 auto;
@@ -81,10 +83,13 @@ nav a:hover::after {
     width: 100%;
 }
 
+/* home */
+
+html, body {padding:0; margin:0; height:100%;}
+
 
 body {
     font-family: "Times New Roman", Times, serif;
-    margin: 0;
     background-image: radial-gradient(circle, white, #cece91, #e1c699);
 }
 
@@ -120,7 +125,6 @@ body {
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
-    padding: 8px 12px;
     position: absolute;
     top: 0;
 }
@@ -140,14 +144,8 @@ body {
     background-color: #717171;
 }
 
-footer {
-    position: absolute;
-    width: 100%;
-    background-color: white;
-    text-align: center;
-}
-
 h1 {
+    font-size: 3vw;
     color: black;
     text-align: center;
 }
@@ -157,51 +155,51 @@ h1 {
     margin: 0 auto;
     text-align: center;
     border-top: solid 1px black;
-    font-size: 20px;
+    font-size: 1.5vw;
 }
 
 .mapouter {
     position: absolute;
     float: right;
-    right: 14vw;
+    right: 15vw;
     text-align: right;
-    height: 10vh;
-    width: 14vw;
+    height: 70vh;
+    width: 30vw;
 }
 
 .gmap_canvas {
     overflow: hidden;
-    background:none!important;
-    height:500px;
-    width:400px;
+    background: none!important;
+    height: 70vh;
+    width: 30vw;
 }
 
 .info {
-    position: relative;
+    position: absolute;
     float: left;
-    font-size: 20px;
-    left: 210px;
-    width: 400px;
+    font-size: 1.5vw;
+    left: 15vw;
+    width: 20vw;
 }
 
 .picture img {
     position: absolute;
     float: right;
-    right: 200px;
-    width: 450px;
-    height: 450px;
+    right: 15vw;
+    width: 30vw;
+    height: 65vh;
 }
 
 .cards {
     position: absolute;
-    left: 175px;
+    left: 12vw;
     display: inline-block;
 }
 
 .card {
     background-color: white;
-    margin-right: 140px;
-    margin-top: 50px;
+    margin-right: 8vw;
+    margin-top: 5vh;
     display: inline-block;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
@@ -215,15 +213,30 @@ h1 {
     position: relative;
     background-color: white;
     text-align: center;
+    font-size: 1vw;
 }
 
 .card img {
-    height: 150px;
-    width: 150px;
+    height: 20vh;
+    width: 10vw;
 }
 
+.wrapper {
+    position: relative;
+    min-height: 100%;
 }
 
+.push {
+    height: 70px;
+}
+
+.footer {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 70px;
+}
 
 
 
