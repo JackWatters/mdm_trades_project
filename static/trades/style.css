@@ -85,12 +85,13 @@ nav a:hover::after {
 
 /* home */
 
-html, body {padding:0; margin:0; height:100%;}
-
-
-body {
+html, body {
+    padding:0;
+    margin:0;
+    height:100%;
     font-family: "Times New Roman", Times, serif;
     background-image: radial-gradient(circle, white, #cece91, #e1c699);
+
 }
 
 .slideShow {
@@ -155,7 +156,7 @@ h1 {
     margin: 0 auto;
     text-align: center;
     border-top: solid 1px black;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .mapouter {
@@ -177,9 +178,9 @@ h1 {
 .info {
     position: absolute;
     float: left;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     left: 15vw;
-    width: 20vw;
+    width: 30vw;
 }
 
 .picture img {
@@ -198,8 +199,8 @@ h1 {
 
 .card {
     background-color: white;
-    margin-right: 8vw;
-    margin-top: 5vh;
+    margin-right: 10vw;
+    margin-bottom: 20vh;
     display: inline-block;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
@@ -227,15 +228,16 @@ h1 {
 }
 
 .push {
-    height: 70px;
+    height: 8vh;
 }
 
 .footer {
     position: absolute;
     background-color: white;
     text-align: center;
+    font-size: 1vw;
     width: 100%;
-    height: 70px;
+    height: 10vh;
 }
 
 
