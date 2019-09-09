@@ -155,7 +155,7 @@ h1 {
     margin: 0 auto;
     text-align: center;
     border-top: solid 1px black;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .mapouter {
@@ -177,9 +177,9 @@ h1 {
 .info {
     position: absolute;
     float: left;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     left: 15vw;
-    width: 20vw;
+    width: 25vw;
 }
 
 .picture img {
