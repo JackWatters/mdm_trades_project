@@ -2,7 +2,237 @@
 
 /* Portrait */
 @media screen and (orientation:portrait) {
-   /* Portrait styles here */
+   /* nav bar */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: white;
+}
+
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    position: absolute;
+    height: 2vw;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    height: 7vw;
+    width: 10vh;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-left: 5vh;
+    padding-top: 3vw;
+    position: relative;
+    font-size: 1vh;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: black;
+    position: absolute;
+}
+
+nav a:hover {
+    color: #003366;
+}
+
+
+nav a:hover::after {
+    background-color: green;
+    width: 100%;
+}
+
+/* home */
+
+html, body {
+    padding:0;
+    margin:0;
+    height:100%;
+    font-family: "Times New Roman", Times, serif;
+    background-image: radial-gradient(circle, white, #cece91, #e1c699);
+
+}
+
+.slideShow {
+    width: 70%;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+    height: 42vw;
+    border: solid 1px black;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 42vh;
+}
+
+.caption {
+    color: #f2f2f2;
+    font-size: 1vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease;
+}
+
+.active,.dot:hover {
+    background-color: #717171;
+}
+
+h1 {
+    font-size: 3vw;
+    color: black;
+    text-align: center;
+}
+
+.box {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: solid 1px black;
+    font-size: 1.4vw;
+}
+
+.mapouter {
+    position: absolute;
+    float: right;
+    right: 15vw;
+    text-align: right;
+    height: 70vh;
+    width: 30vw;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 70vh;
+    width: 30vw;
+}
+
+.info {
+    position: absolute;
+    float: left;
+    font-size: 1.4vw;
+    left: 15vw;
+    width: 30vw;
+}
+
+.picture img {
+    position: absolute;
+    float: right;
+    right: 15vw;
+    width: 30vw;
+    height: 65vh;
+}
+
+.cards {
+    position: absolute;
+    left: 12vw;
+    display: inline-block;
+}
+
+.card {
+    background-color: white;
+    margin-right: 10vw;
+    margin-bottom: 20vh;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0;
+}
+
+.card_info {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.card img {
+    height: 20vh;
+    width: 10vw;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+}
+
+.push {
+    height: 8vh;
+}
+
+.footer {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    font-size: 1vw;
+    width: 100%;
+    height: 10vw;
+}
 }
 /* Landscape */
 @media screen and (orientation:landscape) {
@@ -180,7 +410,7 @@ h1 {
     float: left;
     font-size: 1.4vw;
     left: 15vw;
-    width: 25vw;
+    width: 30vw;
 }
 
 .picture img {
@@ -238,6 +468,7 @@ h1 {
     font-size: 1vw;
     width: 100%;
     height: 10vh;
+}
 }
 
 
