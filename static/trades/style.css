@@ -32,21 +32,21 @@ nav {
     float: left;
     margin-left: 5vw;
     height: 7vw;
-    width: 10vh;
+    width: 25vw;
 }
 
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    margin-left: 9vw;
+    margin-left: 15vw;
     padding: 0;
 }
 
 
 nav li {
     display: inline-block;
-    margin-left: 5vw;
+    margin-left: 4vw;
     padding-top: 3vw;
     position: relative;
     font-size: 1vh;
