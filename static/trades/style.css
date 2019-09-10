@@ -89,14 +89,14 @@ html, body {
 }
 
 .slideShow {
-    width: 70%;
+    width: 80%;
     position: relative;
     margin: auto;
 }
 
 .mySlides {
     display: none;
-    height: 42vw;
+    height: 30vh;
     border: solid 1px black;
 }
 
