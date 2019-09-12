@@ -58,7 +58,7 @@ nav li {
     margin-left: 4vw;
     padding-top: 1.75vh;
     position: relative;
-    font-size: 1vh;
+    font-size: 2vw;
 }
 
 
@@ -170,15 +170,15 @@ h1 {
     margin-bottom: 5vh;
     display: block;
     text-align: right;
-    height: 40vh;
-    width: 55vw;
+    width: 80vw;
+    height: 30vh;
 }
 
 .gmap_canvas {
     overflow: hidden;
     background: none!important;
-    height: 40vh;
-    width: 55vw;
+    width: 80vw;
+    height: 30vh;
 }
 
 .portrait_picture img {
@@ -193,7 +193,7 @@ h1 {
     margin-bottom: 5vh;
     display: block;
     width: 80vw;
-    height: 25vh;
+    height: 30vh;
 }
 
 .info {
@@ -210,6 +210,7 @@ h1 {
     position: absolute;
     left: 8vw;
     display: inline-block;
+    margin: 0 auto;
 }
 
 .card {
@@ -239,6 +240,7 @@ h1 {
 
 .wrapper {
     position: relative;
+    margin-top: 3vh;
     min-height: 100%;
 }
 
@@ -323,7 +325,7 @@ nav li {
     margin-left: 5.25vw;
     padding-top: 4vh;
     position: relative;
-    font-size: 0.75pc;
+    font-size: 2.5vh;
 }
 
 
@@ -431,6 +433,7 @@ h1 {
 
 .mapouter {
     position: absolute;
+    top: 11vh;
     float: right;
     right: 15vw;
     text-align: right;
@@ -455,7 +458,7 @@ h1 {
 
 .portrait_picture img {
     position: absolute;
-    top: 20vh;
+    top: 11vh;
     float: right;
     right: 15vw;
     width: 30vw;
@@ -470,6 +473,7 @@ h1 {
 
 .cards {
     position: absolute;
+    margin-top: 0;
     left: 12vw;
     display: inline-block;
 }
@@ -477,7 +481,7 @@ h1 {
 .card {
     background-color: white;
     margin-right: 10vw;
-    margin-bottom: 20vh;
+    margin-top: 10vh;
     display: inline-block;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
@@ -501,6 +505,7 @@ h1 {
 
 .wrapper {
     position: relative;
+    margin-top: 8vh;
     min-height: 100%;
 }
 
