@@ -12,12 +12,14 @@
             <div class = "cards">
                 <ul>
                     {% for page in pages %}
-                        <div class = "card">
-                            <img src="{{ MEDIA_URL }}{{ page.picture }}" />
-                            <div class = "card_info">
-                                <a href="/trades/page/{{ page.slug }}">{{ page.title }} </a>
+                        <a href="/trades/page/{{ page.slug }}" style="color:inherit;text-decoration:none">
+                            <div class = "card">
+                                <img src="{{ MEDIA_URL }}{{ page.picture }}" />
+                                <div class = "card_info">
+                                    {{ page.title }}
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     {% endfor %}
                 </ul>
             </div>

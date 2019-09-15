@@ -5,15 +5,19 @@
 
 {% block body_block %}
 
+
+<div class = "portrait_picture">
+    <img src="{{ MEDIA_URL }}{{ page.picture }}" />
+</div>
+
+<div class = "landscape_picture">
+    <img src="{{ MEDIA_URL }}{{ page.picture }}" />
+</div>
+
 <h1>{{ page.title }}</h1>
 <div class = "info">
     {{ page.title }} website: <a href="{{ page.url }}"> click here </a> </br>
     {{ page.description }}
-</div>
-
-
-<div class = "picture">
-    <img src="{{ MEDIA_URL }}{{ page.picture }}" />
 </div>
 
 {% endblock %}

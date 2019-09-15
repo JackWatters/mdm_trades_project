@@ -58,7 +58,7 @@ nav li {
     margin-left: 4vw;
     padding-top: 1.75vh;
     position: relative;
-    font-size: 2vw;
+    font-size: 1.8vw;
 }
 
 
@@ -169,7 +169,6 @@ h1 {
     margin: auto;
     margin-bottom: 5vh;
     display: block;
-    text-align: right;
     width: 80vw;
     height: 30vh;
 }
@@ -179,6 +178,8 @@ h1 {
     background: none!important;
     width: 80vw;
     height: 30vh;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .portrait_picture img {
@@ -194,6 +195,7 @@ h1 {
     display: block;
     width: 80vw;
     height: 30vh;
+    border: solid 1px black;
 }
 
 .info {
@@ -211,15 +213,17 @@ h1 {
     left: 8vw;
     display: inline-block;
     margin: 0 auto;
+    margin-bottom: 10vh;
 }
 
 .card {
     background-color: white;
-    margin-right: 14vw;
-    margin-bottom: 10vh;
+    margin-right: 12vw;
+    margin-bottom: 8vh;
     display: inline-block;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
+    border: solid 1px black;
 }
 
 .card:hover {
@@ -229,13 +233,14 @@ h1 {
 .card_info {
     position: relative;
     background-color: white;
+    color: blue;
     text-align: center;
     font-size: 1.5vh;
 }
 
 .card img {
     height: 15vh;
-    width: 25vw;
+    width: 27vw;
 }
 
 .wrapper {
@@ -254,7 +259,7 @@ h1 {
     text-align: center;
     font-size: 1vh;
     width: 100%;
-    height: 5vh;
+    height: 6vh;
 }
 }
 
@@ -322,7 +327,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-left: 5.25vw;
+    margin-left: 5.6vw;
     padding-top: 4vh;
     position: relative;
     font-size: 2.5vh;
@@ -437,15 +442,17 @@ h1 {
     float: right;
     right: 15vw;
     text-align: right;
-    height: 70vh;
-    width: 30vw;
+    height: 60vh;
+    width: 35vw;
 }
 
 .gmap_canvas {
-    overflow: hidden;
     background: none!important;
-    height: 70vh;
-    width: 30vw;
+    overflow: hidden;
+    height: 60vh;
+    width: 35vw;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .info {
@@ -463,6 +470,7 @@ h1 {
     right: 15vw;
     width: 30vw;
     height: 65vh;
+    border: solid 1px black;
 }
 
 .landscape_picture img {
@@ -480,11 +488,12 @@ h1 {
 
 .card {
     background-color: white;
-    margin-right: 10vw;
-    margin-top: 10vh;
+    margin-right: 8vw;
+    margin-bottom: 15vh;
     display: inline-block;
     box-shadow: 0 4px 8px 0;
     transition: 0.3s;
+    border: solid 1px black;
 }
 
 .card:hover {
@@ -495,12 +504,13 @@ h1 {
     position: relative;
     background-color: white;
     text-align: center;
-    font-size: 1vw;
+    color: blue;
+    font-size: 1.5vw;
 }
 
 .card img {
     height: 20vh;
-    width: 10vw;
+    width: 12vw;
 }
 
 .wrapper {
@@ -519,7 +529,7 @@ h1 {
     text-align: center;
     font-size: 1vw;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
 }
 }
 
